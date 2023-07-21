@@ -492,10 +492,10 @@ img{
     align-items: flex-start;
     border-radius: 4px;
     border: 1px solid var(--filtr-btn-color);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .filtr-button:hover,
@@ -678,15 +678,16 @@ img{
 
 .modal-btn:hover,
 .modal-btn:focus{
-    background-color: var(var(--secondary-accent-color));
+    background-color: var(--secondary-accent-color);
+    border: none;
 }
 
 .modal-icon{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.modal-icon:hover,
-.modal-icon:focus{
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon{
     fill:#ffffff;
 }
 
