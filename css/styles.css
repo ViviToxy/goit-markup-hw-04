@@ -720,7 +720,10 @@ img{
     overflow: hidden;
 }
 
-.card-item:hover .overlay,
+.card-item:hover .overlay{
+    transform: translateY(0%);
+}
+
 .card-item:focus .overlay{
     transform: translateY(0%);
 }
