@@ -241,7 +241,6 @@ img{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:var(--title-color);
-    margin-bottom: 8px;
 }
 
 .benefits-item{
@@ -268,6 +267,7 @@ img{
     height: 112px;
     border-radius: 4px;
     background: var(--secondary-white-color);
+    margin-bottom: 8px;
 }
 
 .benefits-container{
@@ -722,7 +722,7 @@ img{
 
 .card-item:hover .overlay,
 .card-item:focus .overlay{
-    transform: translateY(0);
+    transform: translateY(0%);
 }
 
 
